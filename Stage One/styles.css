@@ -48,17 +48,16 @@ header {
 
 }
 #profile a {
-    /* Add your unique styles here */
     background-image: linear-gradient(to bottom, #3498db, #2980b9);
     color: #ffffff; /* Text color */
     text-decoration: none; /* Remove underlines */
-    padding: 5px 10px; /* Padding for the anchor */
+    padding: 5px 10px;
     border-radius: 5px;
     /* Set initial size and transition for the hover effect */
     font-size: 16px;
     transition: transform 0.3s;
-
 }
+
 #profile a:hover {
     transform: scale(1.03);
 }
