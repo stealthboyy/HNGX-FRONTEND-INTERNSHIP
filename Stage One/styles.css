@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("assets/pictures/bg-wa.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+header {
+
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+
+.username {
+    text-align: center;
+    border-bottom: 1px solid rgb(199, 190, 190);
+    width: 80%;
+}
+
+#picture {
+    margin: 10px;
+}
+
+#picture img{
+    width: 100px;
+    height: 50%;
+    border-radius: 6px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#profile a {
+    /* Add your unique styles here */
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underlines */
+    padding: 5px 10px; /* Padding for the anchor */
+    border-radius: 5px;
+    /* Set initial size and transition for the hover effect */
+    font-size: 16px;
+    transition: transform 0.3s;
+
+}
+#profile a:hover {
+    transform: scale(1.03);
+}
