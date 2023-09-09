@@ -6,6 +6,7 @@ const myTrackUpdated = document.querySelector('[data-testid="myTrack"]');
 const myUsernameUpdated = document.querySelector('[data-testid="slackUserName"]');
 const myPortfolio = document.querySelector('[data-testid=“githubURL”]');
 const myProfilePicture = document.querySelector('[data-testid="slackDisplayImage"]');
+const utcTimeUpdated = document.querySelector('[data-testid="currentUTCTime"]');
 
 updateDayOfTheWeek = () => {
     const currentDate = new Date(); 
@@ -15,11 +16,11 @@ updateDayOfTheWeek = () => {
 }
 
 function updateUTCTime() {
-    const currentDate = new Date();
-    const options = { timeZone: "UTC", hour12: true };
-    const utcTimeString = currentDate.toLocaleTimeString("en-US", options);
-    const utcTimeUpdated = document.querySelector('[data-testid="currentUTCTime"]');
-    utcTimeUpdated.textContent = utcTimeString;
+    // const currentDate = new Date();
+    // const options = { timeZone: "UTC", hour12: true };
+    // const utcTimeString = currentDate.toLocaleTimeString("en-US", options);
+    const currentTimeInMilliseconds = Date.now();
+    utcTimeUpdated.textContent = currentTimeInMilliseconds.toString();
 }
 
 // Update the UTC time and day of the week every second
@@ -40,12 +41,12 @@ myProfilePicture.setAttribute('alt', 'Olajide-Oke Oluwapelumi');
 
 
 
-
-
-
 updatePersonalData();
 
 setInterval(() => {
     updateUTCTime();
     updateDayOfTheWeek();
 }, 1000);
+
+const currentTimeInMilliseconds = Date.now();
+console.log(currentTimeInMilliseconds);

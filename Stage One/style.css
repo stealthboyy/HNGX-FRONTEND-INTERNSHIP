@@ -8,7 +8,6 @@
 
 html, body {
     font-family: 'Poppins', sans-serif;
-    background-image: url("assets/pictures/bg-wa.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
